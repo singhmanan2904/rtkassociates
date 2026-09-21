@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# RKT & Associates — Company Secretaries
 
-## Getting Started
+Marketing site for a practising company secretary firm, built with the Next.js App Router.
 
-First, run the development server:
+## Stack
+
+| Concern     | Choice                                                   |
+| ----------- | -------------------------------------------------------- |
+| Framework   | Next.js 16 (App Router, React 19, TypeScript)             |
+| Styling     | Tailwind CSS v4 with design tokens in `src/app/globals.css` |
+| Animation   | CSS transitions driven by an `IntersectionObserver` (`src/components/Reveal.tsx`) — no animation library |
+| Validation  | Zod schema run client-side before submission               |
+| Email       | Web3Forms — frontend-only, no backend required             |
+
+## Running it
 
 ```bash
+npm install
+cp .env.example .env.local   # optional — the form works without it locally
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+> The repo pins `registry=https://registry.npmjs.org/` in `.npmrc` because the machine's
+> global npm config points at a VPN-only mirror. Delete the file if you don't need it.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## The contact form
 
-## Learn More
+The form (`src/components/ContactForm.tsx`) posts straight from the browser to
+[Web3Forms](https://web3forms.com) — there is no API route and no server-side code, so the
+site can be deployed as a fully static export if you ever want to.
 
-To learn more about Next.js, take a look at the following resources:
+What happens on submit:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Validates** with the Zod schema in `src/lib/contact-schema.ts` and shows inline errors.
+2. **Drops bots** silently via a `website` honeypot field hidden from people — if it's
+   filled in, the form fakes a success response and never calls Web3Forms.
+3. **Sends** a JSON POST to `https://api.web3forms.com/submit` with the access key, and
+   sets `replyto` to the sender's address so you can answer from your inbox.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Get a free access key at https://web3forms.com (just an email address, no account), then
+set `NEXT_PUBLIC_WEB3FORMS_KEY` in `.env.local`. It's meant to be public — restrict it to
+your domain from the Web3Forms dashboard once you're live. Without the key set, the form
+shows a friendly "not configured" message instead of failing silently.
 
-## Deploy on Vercel
+Web3Forms' free tier has no submission cap. There's no built-in rate limiting since there's
+no server to hold state — their own spam filtering plus the honeypot cover most abuse.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Editing content
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Nearly all copy lives in **`src/lib/site.ts`** — firm details, nav, stats, services,
+milestones, values, process and FAQs. Change it there and every section follows.
+
+**Before going live**, replace the placeholder firm details in that file: address, phone,
+email, founding year, statistics and the partner attribution in `About.tsx`.
+
+The embedded map in the Contact section (`src/components/sections/Contact.tsx`) reads
+`site.address.mapQuery` and needs no API key — edit that one string to move the pin.
+
+The line-art graphics (skyline, service icons, document stack) are inline SVG components in
+`src/components/Illustrations.tsx`, not image files — edit them there, or swap in real
+photos via `next/image` if you'd rather use photography.
+
+## Deploying
+
+Frontend-only, so any static host works (Vercel, Netlify, GitHub Pages, Cloudflare Pages).
+Set `NEXT_PUBLIC_WEB3FORMS_KEY` as a build-time environment variable wherever you deploy.
+
+## Accessibility & motion
+
+Semantic landmarks, a skip link, labelled fields with `aria-invalid`, a live region for
+form status, and visible focus rings. Every animation is disabled under
+`prefers-reduced-motion: reduce`.
