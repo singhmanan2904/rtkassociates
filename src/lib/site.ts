@@ -1,11 +1,12 @@
 export const site = {
   name: "RKT & Associates",
   shortName: "RKT",
-  tagline: "Company Secretaries",
+  principal: "Rajesh Tripathi",
+  tagline: "Company Secretary",
   description:
-    "A practising company secretary firm advising founders, boards and listed entities on incorporation, ROC compliance, corporate governance and secretarial audit.",
+    "Independent practice of Rajesh Tripathi, FCS and law graduate. Secretarial compliance, board governance, capital raising, SEBI listing work and MCA filings, after 26 years in corporate secretarial roles. The practice opened on 8 September 2026.",
   url: "https://rktassociates.in",
-  email: "contact@rktassociates.in",
+  email: "tripathi.rk1@gmail.com",
   phone: "+91 98765 43210",
   phoneHref: "+919876543210",
   address: {
@@ -17,7 +18,8 @@ export const site = {
     mapQuery: "204 Corporate Chambers, Nariman Point, Mumbai 400021, India",
   },
   hours: "Mon – Fri · 10:00 to 19:00 IST",
-  founded: 2009,
+  founded: 2026,
+  practiceOpened: "8 September 2026",
 } as const;
 
 export const navLinks = [
@@ -29,147 +31,179 @@ export const navLinks = [
 ] as const;
 
 export const stats = [
-  { value: "16+", label: "Years in practice" },
-  { value: "450+", label: "Companies advised" },
-  { value: "2,800+", label: "ROC filings completed" },
-  { value: "100%", label: "Statutory deadlines met" },
+  { value: "26+", label: "Years in corporate secretarial roles" },
+  { value: "FCS", label: "Fellow member of the ICSI" },
+  { value: "6", label: "Corporate appointments since 1999" },
+  { value: "2026", label: "Independent practice opened" },
 ] as const;
 
 export const services = [
   {
-    title: "Company & LLP Incorporation",
+    title: "Corporate secretarial & MCA compliance",
     summary:
-      "End-to-end formation — name approval, SPICe+ filing, DIN and DSC, PAN, TAN and the first board meeting kit.",
-    points: ["Private, public & OPC setup", "LLP and partnership conversion", "Foreign subsidiary structuring"],
+      "Statutory work under the Companies Act, 2013, including corporate actions, statutory registers, and filings on the MCA-21 V3 portal.",
+    points: ["Companies Act, 2013 compliance", "Statutory registers and records", "MCA-21 V3 filings"],
   },
   {
-    title: "ROC & Annual Compliance",
+    title: "Board & corporate governance",
     summary:
-      "Your entire MCA calendar handled — annual returns, event-based filings and registers kept audit-ready year round.",
-    points: ["AOC-4, MGT-7 & DIR-3 KYC", "Event-based e-forms", "Statutory register upkeep"],
+      "Board, committee and general meetings, with agendas, resolutions and minutes prepared to Secretarial Standards SS-1 and SS-2.",
+    points: ["Board, committee and general meetings", "Agendas, resolutions and minutes", "Secretarial Standards SS-1 and SS-2"],
   },
   {
-    title: "Secretarial Audit",
+    title: "Charges, allotments & capital raising",
     summary:
-      "Independent MR-3 audits and health checks that surface gaps before a regulator, investor or acquirer does.",
-    points: ["Section 204 secretarial audit", "Annual secretarial compliance report", "Remediation road-map"],
+      "Loan documentation and RoC charges, plus private placements and preferential allotments of equity, preference shares and non-convertible debentures.",
+    points: ["CHG-1, CHG-4 and CHG-9", "PAS-3, PAS-4 and PAS-5", "Depository corporate actions"],
   },
   {
-    title: "Corporate Governance Advisory",
+    title: "Private & family-held companies",
     summary:
-      "Board processes that hold up under scrutiny — agendas, minutes, committee charters and director obligations.",
-    points: ["Board & committee support", "Related-party frameworks", "Policy drafting"],
+      "Annual accounts, returns, minutes and registers, including programmes to bring delayed filings up to date for promoters and smaller companies.",
+    points: ["MGT-7 and AOC-4", "Delayed filing regularisation", "Section 164(2) and DIN exposure"],
   },
   {
-    title: "FEMA & RBI Compliance",
+    title: "Strike-off (STK-2)",
     summary:
-      "Cross-border filings done on time, from inbound investment reporting to overseas remittance documentation.",
-    points: ["FC-GPR & FC-TRS", "ODI and ECB reporting", "Annual FLA return"],
+      "Voluntary strike-off of dormant or non-operational companies, including holding entities that no longer justify annual audit and maintenance cost.",
+    points: ["STK-2 filings on MCA", "Dormant and non-operational companies", "Closure of surplus holding entities"],
   },
   {
-    title: "SEBI & Listing Compliance",
+    title: "SEBI & listing compliance",
     summary:
-      "LODR obligations for listed and SME-listed companies, including disclosures, certifications and IPO readiness.",
-    points: ["LODR quarterly filings", "Insider trading framework", "IPO & SME listing support"],
+      "Advisory on LODR, insider trading, the takeover code and ICDR, including a structured digital database for unpublished price-sensitive information.",
+    points: ["LODR, PIT, SAST and ICDR", "Listed-company board advisory", "Structured digital database"],
   },
   {
-    title: "Mergers & Restructuring",
+    title: "Insolvency & NCLT",
     summary:
-      "Scheme documentation and NCLT process management for amalgamations, demergers and capital reduction.",
-    points: ["Scheme drafting & filings", "NCLT representation support", "Capital restructuring"],
+      "Secretarial and procedural support for NCLT restructuring, rehabilitation steps, and resolution-plan papers after adjudication.",
+    points: ["NCLT procedural support", "Restructuring steps", "Resolution plan documentation"],
   },
   {
-    title: "Due Diligence & Certification",
+    title: "Mergers & restructuring",
     summary:
-      "Secretarial due diligence for funding rounds and acquisitions, with the certificates lenders and buyers ask for.",
-    points: ["Transaction due diligence", "Search & status reports", "Net-worth and share certificates"],
+      "Schemes of arrangement for listed and unlisted companies, from the due diligence file and the draft scheme through tribunal-convened meetings.",
+    points: ["Schemes of arrangement", "Due diligence files", "Tribunal-convened meetings"],
+  },
+  {
+    title: "Agreements & disputes",
+    summary:
+      "Drafting and review of business agreements, joint ventures, NDAs and contract-manufacturing arrangements, and support in proceedings before NCLT, courts and regulators.",
+    points: ["Agreements, joint ventures and NDAs", "Contract manufacturing arrangements", "NCLT, court and regulatory matters"],
   },
 ] as const;
 
 export const experience = [
   {
-    year: "2009",
-    title: "The practice opens",
-    body: "Founded in Mumbai with a single mandate — keep growing companies on the right side of the Companies Act.",
+    year: "1999",
+    title: "Dalmia Cement (Bharat) Ltd.",
+    body: "Management trainee.",
   },
   {
-    year: "2014",
-    title: "Governance advisory added",
-    body: "Began advising boards on committee structures and minute-keeping as the 2013 Act reshaped compliance.",
+    year: "2000",
+    title: "Mega Plast Ltd.",
+    body: "Assistant company secretary.",
   },
   {
-    year: "2018",
-    title: "Cross-border practice",
-    body: "Built a dedicated FEMA desk supporting inbound investors and Indian subsidiaries of overseas groups.",
+    year: "2002",
+    title: "Shakumbhri Straw Products Ltd.",
+    body: "Manager, finance and company secretary.",
   },
   {
-    year: "2021",
-    title: "Listed-entity mandates",
-    body: "Extended into SEBI LODR compliance and IPO readiness for SME-platform listings.",
+    year: "2006",
+    title: "Spentex Industries Ltd.",
+    body: "Assistant general manager, finance and company secretary.",
   },
   {
-    year: "Today",
-    title: "A team of nine",
-    body: "Company secretaries, paralegals and analysts serving 450+ entities across manufacturing, SaaS and financial services.",
+    year: "2010",
+    title: "Ginni Filaments Ltd.",
+    body: "Deputy general manager and company secretary.",
+  },
+  {
+    year: "2017",
+    title: "JK Paper Ltd.",
+    body: "General manager, secretarial, at an NSE- and BSE-listed company, through to the move into independent practice.",
+  },
+  {
+    year: "2026",
+    title: "RKT & Associates",
+    body: "Independent practice from 8 September 2026, for listed companies and for private family businesses.",
   },
 ] as const;
 
-export const sectors = [
-  "Manufacturing",
-  "SaaS & Technology",
-  "NBFC & Fintech",
-  "Healthcare",
-  "Real Estate",
-  "Logistics",
-  "Retail & D2C",
-  "Professional Services",
+export const focusAreas = [
+  "Companies Act, 2013",
+  "Secretarial Standards",
+  "MCA-21 V3",
+  "SEBI LODR",
+  "Listed companies",
+  "Family businesses",
+  "NCLT",
+  "Charge management",
 ] as const;
 
 export const values = [
   {
-    title: "Deadline discipline",
-    body: "Every mandate runs on a shared compliance calendar with reminders that start well before the statutory due date.",
+    title: "Minutes that follow the Standards",
+    body: "Agendas, resolutions and minutes are prepared to Secretarial Standards SS-1 and SS-2.",
   },
   {
-    title: "One point of contact",
-    body: "A named company secretary owns your file. You never re-explain your cap table to a new person.",
+    title: "Filings taken through the portal",
+    body: "MCA-21 V3 work, including charges, allotments and annual returns, is carried through to acknowledgement.",
   },
   {
-    title: "Plain-language advice",
-    body: "Opinions arrive as a recommendation and its reasoning — not a wall of sections you still have to decode.",
+    title: "Late filings brought current",
+    body: "Delayed MGT-7, AOC-4 and other statutory updates are regularised before they turn into a DIN freeze or a disqualification under section 164(2).",
   },
   {
-    title: "Documentation that survives audit",
-    body: "Registers, minutes and filings are maintained so a due-diligence request is a download, not a scramble.",
+    title: "Listed-company habits",
+    body: "LODR, insider-trading controls and the structured digital database, from someone who has run the secretarial function inside listed groups.",
   },
 ] as const;
 
 export const process = [
-  { step: "01", title: "Discovery call", body: "A 30-minute review of your entity, its filing history and what is pending." },
-  { step: "02", title: "Compliance map", body: "You receive a written scope with the calendar, owners and fees before work starts." },
-  { step: "03", title: "Execution", body: "Filings, drafting and board support delivered against agreed dates, with status visible throughout." },
-  { step: "04", title: "Ongoing review", body: "Quarterly check-ins to catch changes in law, shareholding or structure before they become notices." },
+  {
+    step: "01",
+    title: "Confidential consultation",
+    body: "A first discussion of the company and the matter you want handled.",
+  },
+  {
+    step: "02",
+    title: "Status of the file",
+    body: "Filing history, registers, charges and any pending MCA or SEBI items are reviewed before drafting starts.",
+  },
+  {
+    step: "03",
+    title: "Drafting and filing",
+    body: "Resolutions, minutes, agreements and e-forms are prepared and filed for that mandate.",
+  },
+  {
+    step: "04",
+    title: "Papers left in order",
+    body: "Registers, minutes and filing acknowledgements are kept so the next board meeting or audit can use them.",
+  },
 ] as const;
 
 export const faqs = [
   {
-    q: "What does a practising company secretary actually do?",
-    a: "We are the compliance function for your company — incorporation, every filing the Registrar of Companies expects, board and general meeting process, statutory registers, and certifications that only a practising CS can sign.",
+    q: "Who runs the practice?",
+    a: "Rajesh Tripathi, a Fellow Member of the Institute of Company Secretaries of India (FCS) and a law graduate. He opened RKT & Associates on 8 September 2026 after 26 years in secretarial, corporate finance and legal roles, most recently as General Manager, Secretarial at JK Paper Ltd.",
   },
   {
-    q: "Do you work with early-stage startups?",
-    a: "Yes. A large share of our work is first-time founders — incorporation, ESOP pool creation, funding-round documentation and the filings that follow a share allotment.",
+    q: "What work does the practice take?",
+    a: "MCA and secretarial compliance, board process under the Secretarial Standards, charge creation and satisfaction, private placement and preferential allotment, SEBI listing work, strike-off under STK-2, NCLT support, schemes of arrangement, and commercial agreements.",
   },
   {
-    q: "How are fees structured?",
-    a: "Retainers for ongoing annual compliance, and fixed fees for defined mandates such as incorporation, an allotment or a secretarial audit. You get the number in writing before we begin.",
+    q: "Can you take on annual filings that are already late?",
+    a: "Yes. A regular part of the work for private and family-held companies is identifying delayed accounts and returns, including MGT-7 and AOC-4, and filing them so directors are less exposed to disqualification under section 164(2) or a frozen DIN.",
   },
   {
-    q: "Can you take over compliance that is already behind?",
-    a: "Regularly. We start with a status search, quantify the additional fees and penalties, then file in the order that limits exposure.",
+    q: "Do you advise listed companies?",
+    a: "Yes. The practice advises on SEBI (LODR) Regulations, 2015, the prohibition of insider trading, the takeover code and ICDR, including structured digital databases. That follows secretarial leadership roles inside NSE- and BSE-listed companies, including JK Paper Ltd.",
   },
   {
-    q: "Do you work with clients outside Mumbai?",
-    a: "Most filings are electronic, so we serve clients across India and overseas groups with Indian subsidiaries. Meetings happen over video unless a physical presence is required.",
+    q: "Does the company need to be in Mumbai?",
+    a: "MCA and SEBI filings are electronic. The company does not have to sit in the same city as the office. Meetings can be held over video unless a physical presence is required.",
   },
 ] as const;

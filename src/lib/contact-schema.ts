@@ -1,14 +1,15 @@
 import { z } from "zod";
 
 export const serviceOptions = [
-  "Company / LLP incorporation",
-  "ROC & annual compliance",
-  "Secretarial audit",
-  "Governance advisory",
-  "FEMA & RBI compliance",
+  "Corporate secretarial & MCA compliance",
+  "Board & governance",
+  "Charges, allotments & capital raising",
+  "Private & family-held companies",
+  "Strike-off (STK-2)",
   "SEBI & listing compliance",
+  "Insolvency & NCLT",
   "Mergers & restructuring",
-  "Due diligence & certification",
+  "Agreements & disputes",
   "Something else",
 ] as const;
 

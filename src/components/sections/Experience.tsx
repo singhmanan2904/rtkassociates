@@ -8,8 +8,8 @@ export function Experience() {
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <SectionHeading
           eyebrow="Experience"
-          title="Sixteen years of the same discipline."
-          intro="The practice grew by staying close to the work. Here is how it took shape — and how an engagement runs today."
+          title="Where the experience comes from."
+          intro="Corporate appointments from 1999, then an independent practice from 8 September 2026."
         />
 
         <div className="mt-16 grid gap-16 lg:grid-cols-[1fr_1fr] lg:gap-20">

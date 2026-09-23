@@ -1,4 +1,4 @@
-# RKT & Associates — Company Secretaries
+# RKT & Associates — Company Secretary
 
 Marketing site for a practising company secretary firm, built with the Next.js App Router.
 
@@ -52,8 +52,9 @@ no server to hold state — their own spam filtering plus the honeypot cover mos
 Nearly all copy lives in **`src/lib/site.ts`** — firm details, nav, stats, services,
 milestones, values, process and FAQs. Change it there and every section follows.
 
-**Before going live**, replace the placeholder firm details in that file: address, phone,
-email, founding year, statistics and the partner attribution in `About.tsx`.
+Firm facts live in that file: the practitioner, the practice opening date, services,
+career history, phone and address. The phone number and office address are the ones
+already chosen for the site.
 
 The embedded map in the Contact section (`src/components/sections/Contact.tsx`) reads
 `site.address.mapQuery` and needs no API key — edit that one string to move the pin.

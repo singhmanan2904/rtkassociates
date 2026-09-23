@@ -18,7 +18,7 @@ export function Contact() {
         <SectionHeading
           eyebrow="Contact"
           title="Tell us what you are dealing with."
-          intro="Send a note and a company secretary — not an assistant — reads it. The first consultation is free and usually takes half an hour."
+          intro={`Write with the company and the matter. ${site.principal} will reply to arrange a confidential consultation.`}
         />
 
         <div className="mt-14 grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:gap-14">
@@ -70,12 +70,12 @@ export function Contact() {
                 <div>
                   <p className="font-serif text-lg tracking-tight text-navy-900">Prefer email?</p>
                   <p className="mt-2 text-sm leading-relaxed text-navy-900/65">
-                    Write to us directly at{" "}
+                    Write directly to{" "}
                     <a href={`mailto:${site.email}`} className="link-underline font-medium text-navy-900">
                       {site.email}
                     </a>
-                    . Attach your incorporation certificate or latest filings and we will come back with a
-                    status read.
+                    . Attach the latest filings or the notice you have received, and you will get a reply on
+                    whether the practice can take the matter.
                   </p>
                 </div>
               </div>

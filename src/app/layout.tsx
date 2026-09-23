@@ -23,12 +23,15 @@ export const metadata: Metadata = {
   },
   description: site.description,
   keywords: [
+    "Rajesh Tripathi",
     "company secretary",
     "practising company secretary",
+    "FCS",
     "ROC compliance",
-    "secretarial audit",
     "corporate governance",
-    "company incorporation India",
+    "SEBI LODR",
+    "MCA filings",
+    "RKT & Associates",
   ],
   openGraph: {
     type: "website",

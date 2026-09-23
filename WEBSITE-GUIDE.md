@@ -41,10 +41,10 @@ and what happens if you change it:
 | Office address | `address.line1`, `address.line2` |
 | The pin location on the map | `address.mapQuery` — just type the address you want the map to point to |
 | Office hours | `hours` |
-| Homepage stats (e.g. "450+ Companies advised") | `stats` |
+| Homepage stats (e.g. "26+ Years in corporate secretarial roles") | `stats` |
 | List of services and their descriptions | `services` |
 | Company timeline / milestones | `experience` |
-| Industries you serve (the scrolling list) | `sectors` |
+| Scrolling list under the hero | `focusAreas` |
 | "Why work with us" points | `values` |
 | Step-by-step process | `process` |
 | FAQ questions and answers | `faqs` |

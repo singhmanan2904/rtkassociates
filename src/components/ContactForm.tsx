@@ -88,7 +88,7 @@ export function ContactForm() {
       }
 
       setStatus("success");
-      setFeedback("Thank you — your message is with us. We reply within one working day.");
+      setFeedback("Thank you. Your message has been sent.");
       form.reset();
     } catch {
       setStatus("error");
@@ -251,7 +251,7 @@ export function ContactForm() {
         </button>
 
         <p className="text-xs leading-relaxed text-navy-900/50">
-          We reply within one working day. Your details stay with us.
+          Your message goes to {site.principal}.
         </p>
       </div>
 

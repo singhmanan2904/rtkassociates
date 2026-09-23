@@ -1,3 +1,5 @@
+import { site } from "@/lib/site";
+
 export function Logo({ tone = "light" }: { tone?: "light" | "dark" }) {
   const isDark = tone === "dark";
 
@@ -26,7 +28,7 @@ export function Logo({ tone = "light" }: { tone?: "light" | "dark" }) {
             isDark ? "text-white/50" : "text-navy-900/50"
           }`}
         >
-          Company Secretaries
+          {site.tagline}
         </span>
       </span>
     </span>

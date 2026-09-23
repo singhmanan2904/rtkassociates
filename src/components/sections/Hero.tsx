@@ -1,5 +1,5 @@
 import { Reveal } from "@/components/Reveal";
-import { sectors, stats } from "@/lib/site";
+import { focusAreas, site, stats } from "@/lib/site";
 
 export function Hero() {
   return (
@@ -21,7 +21,7 @@ export function Hero() {
             <Reveal>
               <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-white/70 backdrop-blur">
                 <span className="h-1.5 w-1.5 rounded-full bg-gold-400" aria-hidden />
-                Practising since 2009
+                {site.principal}, FCS, LL.B.
               </span>
             </Reveal>
 
@@ -35,9 +35,9 @@ export function Hero() {
 
             <Reveal delay={170}>
               <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/70">
-                We are a firm of practising company secretaries. Founders, boards and listed companies rely
-                on us for incorporation, ROC filings, secretarial audit and governance that stands up to
-                scrutiny.
+                {site.principal} advises listed companies and private family businesses on secretarial
+                compliance, board governance, capital raising and MCA filings, after 26 years in corporate
+                secretarial roles.
               </p>
             </Reveal>
 
@@ -95,13 +95,13 @@ export function Hero() {
         />
         <div className="flex overflow-hidden">
           <ul className="flex shrink-0 animate-marquee items-center gap-12 pr-12">
-            {[...sectors, ...sectors].map((sector, index) => (
+            {[...focusAreas, ...focusAreas].map((area, index) => (
               <li
-                key={`${sector}-${index}`}
-                aria-hidden={index >= sectors.length}
+                key={`${area}-${index}`}
+                aria-hidden={index >= focusAreas.length}
                 className="whitespace-nowrap text-sm font-medium uppercase tracking-[0.18em] text-white/35"
               >
-                {sector}
+                {area}
               </li>
             ))}
           </ul>

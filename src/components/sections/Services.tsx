@@ -16,8 +16,8 @@ export function Services() {
           tone="dark"
           align="center"
           eyebrow="What we do"
-          title="Every obligation the Companies Act places on you."
-          intro="Eight practice areas, one team. Take the whole compliance function off your desk, or bring us in for a single mandate."
+          title="The matters the practice handles."
+          intro="Secretarial and MCA work, board process, capital raising, listing regulations, strike-off, NCLT and commercial agreements. For listed companies and for private family businesses."
         />
 
         <div className="mt-16 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
@@ -48,11 +48,11 @@ export function Services() {
 
         <Reveal delay={120}>
           <p className="mt-14 text-center text-sm text-white/55">
-            Not sure which of these you need?{" "}
+            If you are unsure where a matter sits,{" "}
             <a href="#contact" className="link-underline font-medium text-gold-300">
-              Ask us on a 30-minute call
+              write in
             </a>{" "}
-            — there is no charge for the first conversation.
+            and we will say whether the practice can take it.
           </p>
         </Reveal>
       </div>

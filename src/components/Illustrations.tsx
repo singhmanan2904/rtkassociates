@@ -56,18 +56,19 @@ export function DocumentStackIllustration({ className }: { className?: string })
 }
 
 const serviceIconPaths: Record<number, ReactNode> = {
-  0: <path d="M6 20V9l6-4 6 4v11M6 20h12M9 20v-4h6v4M9 12h.01M15 12h.01M9 8.5h.01M15 8.5h.01" />, // incorporation — building
-  1: <path d="M4 6h16M4 6v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6M9 6V4h6v2M9 12h6M9 16h4" />, // ROC — filing box
-  2: <path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3Z M9.5 12l2 2 3.5-3.5" />, // audit — shield check
-  3: <path d="M12 21c4-2 4-6 4-9V6l-4-2-4 2v6c0 3 0 7 4 9Z M8 8h8 M9 11l1.5 1.5L15 8.5" />, // governance
-  4: <path d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Z M3.5 9h17M3.5 15h17M12 3c2 2.5 3 5.6 3 9s-1 6.5-3 9c-2-2.5-3-5.6-3-9s1-6.5 3-9Z" />, // FEMA — globe
-  5: <path d="M6 20V4h9l3 3v13H6Z M15 4v3h3 M9 12h6M9 16h6M9 8h3" />, // SEBI — listing doc
-  6: <path d="M7 4l5 5 5-5 M12 9v11 M7 20h10 M4 4l3 0 M17 4l3 0" />, // mergers — arrows joining
-  7: <path d="M11 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14Z M16.2 16.2 21 21 M8.5 11l2 2 3-3.5" />, // due diligence — search check
+  0: <path d="M4 6h16M4 6v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6M9 6V4h6v2M9 12h6M9 16h4" />,
+  1: <path d="M12 21c4-2 4-6 4-9V6l-4-2-4 2v6c0 3 0 7 4 9Z M8 8h8 M9 11l1.5 1.5L15 8.5" />,
+  2: <path d="M12 3v18M7 8h10M7 16h10M5 8c0-2 1.5-3 2-3h10c.5 0 2 1 2 3M5 16c0 2 1.5 3 2 3h10c.5 0 2-1 2-3" />,
+  3: <path d="M4 11l8-7 8 7M6 10v9h12v-9M10 19v-5h4v5" />,
+  4: <path d="M6 4h12v16H6V4Z M9 8h6M9 12h6M15 16l2 2 4-4" />,
+  5: <path d="M6 20V4h9l3 3v13H6Z M15 4v3h3 M9 12h6M9 16h6M9 8h3" />,
+  6: <path d="M12 3v4M9 7h6M8 21h8l1-8H7l1 8Z M10 13h4" />,
+  7: <path d="M7 4l5 5 5-5 M12 9v11 M7 20h10 M4 4h3 M17 4h3" />,
+  8: <path d="M7 3h8l4 4v14H7V3Z M15 3v4h4 M10 12h6 M10 16h4" />,
 };
 
 export function ServiceIcon({ index, className }: { index: number; className?: string }) {
-  const path = serviceIconPaths[index % 8];
+  const path = serviceIconPaths[index] ?? serviceIconPaths[0];
   return (
     <svg
       viewBox="0 0 24 24"
