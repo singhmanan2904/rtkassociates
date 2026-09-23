@@ -1,4 +1,4 @@
-# RKT & Associates — Company Secretary
+# RKT & Associates — Company Secretary & Corporate Governance Advisor
 
 Marketing site for a practising company secretary firm, built with the Next.js App Router.
 

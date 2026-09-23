@@ -2,7 +2,7 @@ export const site = {
   name: "RKT & Associates",
   shortName: "RKT",
   principal: "Rajesh Tripathi",
-  tagline: "Company Secretary",
+  tagline: "Company Secretary & Corporate Governance Advisor",
   description:
     "Independent practice of Rajesh Tripathi, FCS and law graduate. Secretarial compliance, board governance, capital raising, SEBI listing work and MCA filings, after 26 years in corporate secretarial roles. The practice opened on 8 September 2026.",
   url: "https://rktassociates.in",

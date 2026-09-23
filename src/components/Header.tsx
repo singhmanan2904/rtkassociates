@@ -67,7 +67,7 @@ export function Header() {
     >
       <div className="mx-auto flex h-full max-w-6xl items-center justify-between px-5 sm:px-8">
         <a href="#home" onClick={() => setMenuOpen(false)} className="shrink-0" aria-label={`${"RKT & Associates"} — home`}>
-          <Logo tone={solid ? "light" : "dark"} />
+          <Logo tone={solid ? "light" : "dark"} compact />
         </a>
 
         <nav className="hidden items-center gap-1 md:flex" aria-label="Primary">
@@ -78,7 +78,7 @@ export function Header() {
                 key={link.href}
                 href={link.href}
                 aria-current={isActive ? "true" : undefined}
-                className={`relative rounded-full px-4 py-2 text-sm font-medium transition-colors duration-300 ${
+                className={`relative rounded-full px-3 py-2 text-sm font-medium transition-colors duration-300 xl:px-4 ${
                   solid
                     ? isActive
                       ? "text-navy-900"
@@ -103,7 +103,7 @@ export function Header() {
         <div className="flex items-center gap-3">
           <a
             href="#contact"
-            className={`hidden rounded-full px-5 py-2.5 text-sm font-medium transition-all duration-300 sm:inline-block ${
+            className={`hidden whitespace-nowrap rounded-full px-5 py-2.5 text-sm font-medium transition-all duration-300 sm:inline-block ${
               solid
                 ? "bg-navy-900 text-white hover:bg-navy-800"
                 : "bg-white/10 text-white ring-1 ring-white/25 backdrop-blur hover:bg-white/20"

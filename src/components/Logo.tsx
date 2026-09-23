@@ -1,7 +1,8 @@
 import { site } from "@/lib/site";
 
-export function Logo({ tone = "light" }: { tone?: "light" | "dark" }) {
+export function Logo({ tone = "light", compact = false }: { tone?: "light" | "dark"; compact?: boolean }) {
   const isDark = tone === "dark";
+  const [lead, rest] = site.tagline.split(" & ");
 
   return (
     <span className="flex items-center gap-3">
@@ -24,11 +25,12 @@ export function Logo({ tone = "light" }: { tone?: "light" | "dark" }) {
           RKT &amp; Associates
         </span>
         <span
-          className={`block text-[0.65rem] font-medium uppercase tracking-[0.22em] transition-colors duration-500 ${
-            isDark ? "text-white/50" : "text-navy-900/50"
-          }`}
+          className={`block text-[0.6rem] font-medium uppercase leading-snug tracking-[0.12em] transition-colors duration-500 ${
+            compact ? "md:hidden lg:block" : ""
+          } ${isDark ? "text-white/50" : "text-navy-900/50"}`}
         >
-          {site.tagline}
+          <span className="block whitespace-nowrap">{lead}</span>
+          {rest ? <span className="block whitespace-nowrap">& {rest}</span> : null}
         </span>
       </span>
     </span>
