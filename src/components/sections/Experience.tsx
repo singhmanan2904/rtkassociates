@@ -4,7 +4,7 @@ import { experience, process } from "@/lib/site";
 
 export function Experience() {
   return (
-    <section id="experience" className="scroll-mt-24 bg-sand-100 py-24 sm:py-28 lg:py-32">
+    <section id="experience" className="scroll-mt-24 bg-sand-100 py-16 sm:py-20 lg:py-24">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <SectionHeading
           eyebrow="Experience"
@@ -12,14 +12,14 @@ export function Experience() {
           intro="Corporate appointments from 1999, then an independent practice from 8 September 2026."
         />
 
-        <div className="mt-16 grid gap-16 lg:grid-cols-[1fr_1fr] lg:gap-20">
+        <div className="mt-12 grid gap-12 lg:grid-cols-[1fr_1fr] lg:gap-16">
           <ol className="relative">
             <span
               aria-hidden
               className="absolute bottom-2 left-[0.4375rem] top-2 w-px bg-gradient-to-b from-gold-500/60 via-navy-900/15 to-transparent"
             />
             {experience.map((item, index) => (
-              <Reveal key={item.year} delay={index * 90} as="li" className="relative block pb-10 pl-10 last:pb-0">
+              <Reveal key={item.year} delay={index * 90} as="li" className="relative block pb-7 pl-10 last:pb-0">
                 <span
                   aria-hidden
                   className="absolute left-0 top-1.5 grid h-[0.9375rem] w-[0.9375rem] place-items-center rounded-full border border-gold-500/50 bg-sand-100"

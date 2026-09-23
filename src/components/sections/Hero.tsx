@@ -15,8 +15,8 @@ export function Hero() {
         <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-b from-transparent to-navy-950" />
       </div>
 
-      <div className="mx-auto max-w-6xl px-5 pb-20 pt-16 sm:px-8 sm:pb-24 sm:pt-24 lg:pb-28 lg:pt-32">
-        <div className="grid items-center gap-14 lg:grid-cols-[1.15fr_0.85fr] lg:gap-16">
+      <div className="mx-auto max-w-6xl px-5 pb-14 pt-12 sm:px-8 sm:pb-16 sm:pt-16 lg:pb-20 lg:pt-20">
+        <div className="grid items-center gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:gap-12">
           <div>
             <Reveal>
               <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-white/70 backdrop-blur">
@@ -26,7 +26,7 @@ export function Hero() {
             </Reveal>
 
             <Reveal delay={90}>
-              <h1 className="mt-7 font-serif text-4xl leading-[1.08] tracking-tight text-white sm:text-5xl lg:text-6xl">
+              <h1 className="mt-5 font-serif text-4xl leading-[1.08] tracking-tight text-white sm:text-5xl lg:text-6xl">
                 Corporate compliance,
                 <br />
                 <span className="text-sheen">handled with certainty.</span>
@@ -34,7 +34,7 @@ export function Hero() {
             </Reveal>
 
             <Reveal delay={170}>
-              <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/70">
+              <p className="mt-5 max-w-xl text-lg leading-relaxed text-white/70">
                 {site.principal} advises listed companies and private family businesses on secretarial
                 compliance, board governance, capital raising and MCA filings, after 26 years in corporate
                 secretarial roles.
@@ -42,7 +42,7 @@ export function Hero() {
             </Reveal>
 
             <Reveal delay={250}>
-              <div className="mt-9 flex flex-wrap items-center gap-3">
+              <div className="mt-7 flex flex-wrap items-center gap-3">
                 <a
                   href="#contact"
                   className="group inline-flex items-center gap-2 rounded-full bg-gold-500 px-6 py-3.5 text-sm font-semibold text-navy-950 transition-all duration-300 hover:bg-gold-400 hover:shadow-[0_10px_30px_-10px_rgba(195,155,53,0.7)]"
@@ -69,7 +69,7 @@ export function Hero() {
                 className="absolute -top-px left-8 right-8 h-px bg-gradient-to-r from-transparent via-gold-400/60 to-transparent"
               />
               <p className="text-xs font-medium uppercase tracking-[0.2em] text-gold-400">The practice</p>
-              <dl className="mt-7 grid grid-cols-2 gap-x-6 gap-y-8">
+              <dl className="mt-6 grid grid-cols-2 gap-x-6 gap-y-6">
                 {stats.map((stat) => (
                   <div key={stat.label}>
                     <dt className="sr-only">{stat.label}</dt>

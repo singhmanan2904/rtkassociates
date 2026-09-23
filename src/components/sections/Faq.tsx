@@ -9,9 +9,9 @@ export function Faq() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section className="bg-sand-50 py-24 sm:py-28 lg:py-32">
+    <section className="bg-sand-50 py-16 sm:py-20 lg:py-24">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
-        <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
+        <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:gap-14">
           <SectionHeading
             eyebrow="Questions"
             title="The things people ask us first."

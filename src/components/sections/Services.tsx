@@ -5,7 +5,7 @@ import { services } from "@/lib/site";
 
 export function Services() {
   return (
-    <section id="services" className="relative scroll-mt-24 overflow-hidden bg-navy-950 py-24 sm:py-28 lg:py-32">
+    <section id="services" className="relative scroll-mt-24 overflow-hidden bg-navy-950 py-16 sm:py-20 lg:py-24">
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute left-1/2 top-0 h-[30rem] w-[45rem] -translate-x-1/2 rounded-full bg-navy-600/18 blur-[120px]" />
         <div className="absolute inset-0 grain opacity-[0.3]" />
@@ -20,7 +20,7 @@ export function Services() {
           intro="Secretarial and MCA work, board process, capital raising, listing regulations, strike-off, NCLT and commercial agreements. For listed companies and for private family businesses."
         />
 
-        <div className="mt-16 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {services.map((service, index) => (
             <Reveal key={service.title} delay={(index % 4) * 80} className="h-full">
               <article className="group relative flex h-full flex-col rounded-xl border border-white/10 bg-white/[0.03] p-6 transition-all duration-500 hover:-translate-y-1 hover:border-gold-400/35 hover:bg-white/[0.06]">
@@ -47,7 +47,7 @@ export function Services() {
         </div>
 
         <Reveal delay={120}>
-          <p className="mt-14 text-center text-sm text-white/55">
+          <p className="mt-10 text-center text-sm text-white/55">
             If you are unsure where a matter sits,{" "}
             <a href="#contact" className="link-underline font-medium text-gold-300">
               write in

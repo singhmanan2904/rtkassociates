@@ -13,7 +13,7 @@ const details = [
 
 export function Contact() {
   return (
-    <section id="contact" className="scroll-mt-24 bg-sand-100 py-24 sm:py-28 lg:py-32">
+    <section id="contact" className="scroll-mt-24 bg-sand-100 py-16 sm:py-20 lg:py-24">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <SectionHeading
           eyebrow="Contact"
@@ -21,10 +21,10 @@ export function Contact() {
           intro={`Write with the company and the matter. ${site.principal} will reply to arrange a confidential consultation.`}
         />
 
-        <div className="mt-14 grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:gap-14">
-          <div className="space-y-8">
+        <div className="mt-10 grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:gap-12">
+          <div className="space-y-6">
             <Reveal>
-              <dl className="space-y-6">
+              <dl className="space-y-5">
                 {details.map((detail) => (
                   <div key={detail.label}>
                     <dt className="text-xs font-medium uppercase tracking-[0.18em] text-navy-900/45">

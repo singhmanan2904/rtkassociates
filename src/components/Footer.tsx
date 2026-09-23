@@ -8,8 +8,8 @@ export function Footer() {
     <footer className="relative overflow-hidden bg-navy-950 text-white/60">
       <div aria-hidden className="pointer-events-none absolute inset-0 grain opacity-[0.25]" />
 
-      <div className="relative mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-20">
-        <div className="grid gap-12 md:grid-cols-[1.4fr_1fr_1fr]">
+      <div className="relative mx-auto max-w-6xl px-5 py-12 sm:px-8 sm:py-14">
+        <div className="grid gap-8 md:grid-cols-[1.4fr_1fr_1fr]">
           <div>
             <Logo tone="dark" />
             <p className="mt-6 max-w-sm text-sm leading-relaxed">{site.description}</p>
@@ -42,7 +42,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-14 flex flex-col gap-4 border-t border-white/10 pt-8 text-xs sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-10 flex flex-col gap-4 border-t border-white/10 pt-6 text-xs sm:flex-row sm:items-center sm:justify-between">
           <p>
             © {year} {site.name}. All rights reserved.
           </p>
